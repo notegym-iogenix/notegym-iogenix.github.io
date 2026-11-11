@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Libreta de entreno · iO.GENIX</title>
+  <meta name="description" content="Tu libreta de entrenamiento iO.GENIX: apunta series, kilos, tiempos y vueltas, mira tu progreso y recibe un consejo después de cada sesión.">
+  <meta name="theme-color" content="#0b0a08">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Libreta iO">
+  <meta property="og:title" content="Libreta de entreno iO.GENIX">
+  <meta property="og:description" content="Apunta tus entrenos, bate tus récords y recibe tu consejo iO.GENIX. Gratis y sin registro.">
+  <meta property="og:image" content="img/icon-512.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="preload" href="fonts/montserrat-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/app.css?v=1.0.0">
+</head>
+<body>
+  <main id="app"></main>
+  <div id="restbar" class="restbar hidden" role="status" aria-live="polite">
+    <div class="t">0:00</div>
+    <div class="grow"><div class="lbl small muted">Descanso</div></div>
+    <button class="btn sm" data-act="rest-add" data-d="-15">−15</button>
+    <button class="btn sm" data-act="rest-add" data-d="15">+15</button>
+    <button class="btn sm primary" data-act="rest-skip">Saltar</button>
+    <div class="bar"></div>
+  </div>
+  <nav id="tabs" class="tabs"></nav>
+  <noscript><p style="padding:20px">Activa JavaScript para usar la libreta.</p></noscript>
+  <script src="js/data.js?v=1.0.0"></script>
+  <script src="js/core.js?v=1.0.0"></script>
+  <script src="js/advice.js?v=1.0.0"></script>
+  <script src="js/share.js?v=1.0.0"></script>
+  <script src="js/timer.js?v=1.0.0"></script>
+  <script src="js/app.js?v=1.0.0"></script>
+</body>
+</html>
