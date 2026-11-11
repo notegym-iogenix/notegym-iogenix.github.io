@@ -1,6 +1,6 @@
 /* Libreta iO.GENIX · estado, utilidades, métricas y récords */
 const KEY = 'libreta_iogenix_v1';
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 
 const DEFAULT_STATE = () => ({
   v: 1,

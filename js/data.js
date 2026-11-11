@@ -275,6 +275,9 @@ const GUIAS = [
 
 const AVISO_LEGAL = 'Los complementos alimenticios no deben utilizarse como sustitutos de una dieta variada y equilibrada y de un estilo de vida saludable. No superar la dosis diaria recomendada. Información general para adultos sanos: para una pauta personalizada consulta a un dietista-nutricionista o a tu médico. Revisa alérgenos y trazas en la etiqueta.';
 
+/* Aviso destacado que sale debajo de los productos recomendados */
+const AVISO_ETIQUETA = '<b>Antes de tomar cualquier complemento, lee bien la etiqueta.</b> Revisa siempre la lista completa de ingredientes, los alérgenos (leche, soja, gluten, huevo, frutos de cáscara…) y las posibles trazas, además del modo de empleo, la dosis diaria y las advertencias del envase. Lo que ves aquí es solo un resumen orientativo y no sustituye al etiquetado. Si tienes alguna alergia o intolerancia, estás embarazada o en periodo de lactancia, tomas medicación o tienes algún problema de salud, consulta antes con un profesional sanitario.';
+
 const FRASES_OK = [
   '¡Buen trabajo, {n}! 💪', '¡Entreno a la saca, {n}! 🔥', '¡Así se hace, {n}! 👏', '¡Otro ladrillo más, {n}! 🧱', '¡Hoy has cumplido, {n}! ✅', '¡Qué sesión, {n}! ⚡',
 ];

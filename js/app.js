@@ -210,7 +210,7 @@ function detalle(id, hero) {
   if (prs.length) html += `<div class="card gold mt12"><p class="eyebrow">Nuevos récords</p><ul class="pr-list">${prs.map((p) => `<li>🏆 <span><b>${esc(ej(p.ej).n)}</b> · ${esc(p.txt)}</span></li>`).join('')}</ul></div>`;
   // consejo
   html += `<h2>${hero ? 'Tu consejo iO.GENIX' : 'Consejo para este entreno'}</h2><div class="card"><p class="eyebrow mb0">Tipo de sesión</p><p class="profile-tag mt0 mb0">${pf.ico} ${pf.t}</p>
-    ${c.picks.length ? `<p class="small muted">Para un entreno como este, tu mejor combinación iO.GENIX sería:</p>${c.picks.map((p) => prodCard(p)).join('')}` : ''}
+    ${c.picks.length ? `<p class="small muted">Para un entreno como este, tu mejor combinación iO.GENIX sería:</p>${c.picks.map((p) => prodCard(p)).join('')}<div class="alerta" role="note"><span class="ico">⚠️</span><p>${AVISO_ETIQUETA}</p></div>` : ''}
     ${c.tips.map((t) => `<div class="tip">💡 <span>${esc(t)}</span></div>`).join('')}
     ${c.picks.length ? `<p class="legal">${AVISO_LEGAL}</p>` : ''}</div>`;
   // bloques
@@ -225,7 +225,7 @@ function detalle(id, hero) {
 function prodCard(p) {
   const P = PRODUCTOS[p.key]; if (!P) return '';
   const url = P.url + (P.url.includes('?') ? '&' : '?') + UTM;
-  return `<div class="prod"><img src="${P.img}" alt="${esc(P.n)}" loading="lazy"><div class="grow"><h3>${esc(P.n)}</h3><p class="why">${esc(p.why)}</p><p class="comp">${esc(P.comp)}</p>${P.claim ? `<p class="claim">${esc(P.claim)}</p>` : ''}<a class="btn sm" href="${url}" target="_blank" rel="noopener">Ver en la tienda ↗</a></div></div>`;
+  return `<div class="prod"><img src="${P.img}" alt="${esc(P.n)}" loading="lazy"><div class="grow"><h3>${esc(P.n)}</h3><p class="why">${esc(p.why)}</p><p class="comp">${esc(P.comp)}</p>${P.claim ? `<p class="claim">${esc(P.claim)}</p>` : ''}<p class="label-note">📋 Ingredientes, alérgenos y trazas: consúltalos siempre en la etiqueta.</p><a class="btn sm" href="${url}" target="_blank" rel="noopener">Ver ficha e ingredientes ↗</a></div></div>`;
 }
 function bloqueLectura(b) {
   if (b.k === 'wod') return `<div class="block"><div class="block-head"><span class="tag">WOD</span><h3>${esc(b.formato)} ${b.min ? esc(b.min) + ' min' : ''}</h3></div>${b.rondas ? `<p class="mb0"><b>Resultado:</b> ${esc(b.rondas)}${b.formato === 'AMRAP' ? ' rondas' : ''}</p>` : ''}${b.tiempo ? `<p class="mb0"><b>Tiempo:</b> ${esc(b.tiempo)}</p>` : ''}${b.mov ? `<p class="small muted" style="white-space:pre-line">${esc(b.mov)}</p>` : ''}</div>`;
