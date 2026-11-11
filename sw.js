@@ -1,10 +1,10 @@
 /* Libreta iO.GENIX · service worker (funciona sin conexión).
  * Al publicar cambios, sube CACHE para que los móviles cojan la versión nueva. */
-const CACHE = 'libreta-iogenix-v1.0.1';
+const CACHE = 'libreta-iogenix-v1.0.2';
 const SHELL = [
   './', 'index.html', 'manifest.webmanifest',
-  'css/app.css?v=1.0.1',
-  'js/data.js?v=1.0.1', 'js/core.js?v=1.0.1', 'js/advice.js?v=1.0.1', 'js/share.js?v=1.0.1', 'js/timer.js?v=1.0.1', 'js/app.js?v=1.0.1',
+  'css/app.css?v=1.0.2',
+  'js/data.js?v=1.0.2', 'js/core.js?v=1.0.2', 'js/advice.js?v=1.0.2', 'js/share.js?v=1.0.2', 'js/timer.js?v=1.0.2', 'js/app.js?v=1.0.2',
   'fonts/montserrat-latin-400-normal.woff2', 'fonts/montserrat-latin-600-normal.woff2', 'fonts/montserrat-latin-700-normal.woff2', 'fonts/montserrat-latin-800-normal.woff2',
   'fonts/barlow-condensed-latin-700-normal.woff2', 'fonts/barlow-condensed-latin-700-italic.woff2',
   'img/logo.svg', 'img/icon-192.png', 'img/icon-512.png', 'img/favicon.png', 'img/apple-touch-icon.png',

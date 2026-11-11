@@ -225,3 +225,4 @@ nav.tabs button.go small { color: var(--gold-2); }
 .alerta p { margin: 0; font-size: .82rem; line-height: 1.5; color: var(--text); }
 .alerta b { color: #f3b0b5; }
 .prod .label-note { font-size: .72rem; color: var(--muted); margin: 0 0 8px; }
+.restbar .lbl { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
