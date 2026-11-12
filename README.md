@@ -2,7 +2,7 @@
 
 Regalo para la comunidad de iO.GENIX: una libreta de entrenamiento instalable (PWA) que funciona sin conexión y sin registro.
 
-**App:** https://ayolabsia-lab.github.io/libreta-iogenix/
+**App:** https://ayolabsia-lab.github.io/notegym-iogenix/
 
 ## Qué hace
 - Registro de fuerza (kg × reps × RPE), peso corporal, isométricos, cardio por vueltas (km, tiempo, FC, ritmo), estaciones HYROX (metros, kg, tiempo), WODs (AMRAP, EMOM, For Time, Tabata) y deportes (pádel, fútbol…).
